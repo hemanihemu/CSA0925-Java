@@ -1,0 +1,15 @@
+import java.util.*;
+class Remainders
+{
+public static void main(String args[])
+{
+int Q,R,divid,divisor;
+Scanner sc=new Scanner(System.in);
+divid=sc.nextInt();
+divisor=sc.nextInt();
+Q=divid/divisor;
+R=divid%divisor;
+System.out.println("quotient is:" + Q);
+System.out.println("Remainder is:"+R);
+}
+}
