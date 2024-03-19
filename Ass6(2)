@@ -1,0 +1,51 @@
+import java.util.*;
+class Student2
+{
+    String name;
+    int regno;
+    int total;
+    double average;
+    int sub1mark;
+    int sub2mark;
+    int sub3mark;
+    int sub4mark;
+    int sub5mark;
+    void get(String student_name, int number, int a, int b, int c, int d, int e) 
+     {
+        name = student_name;
+        regno = number;
+        sub1mark = a;
+        sub2mark = b;
+        sub3mark = c;
+        sub4mark = d;
+        sub5mark = e;
+    }
+    void calculate() 
+    {
+        total = sub1mark + sub2mark + sub3mark + sub4mark + sub5mark;
+        average = total / 5.0; 
+    }
+    void display() 
+   {
+        System.out.println("Name: " + name);
+        System.out.println("Registration Number: " + regno);
+        System.out.println("Marks in Subject 1: " + sub1mark);
+        System.out.println("Marks in Subject 2: " + sub2mark);
+        System.out.println("Marks in Subject 3: " + sub3mark);
+        System.out.println("Marks in Subject 4: " + sub4mark);
+        System.out.println("Marks in Subject 5: " + sub5mark);
+        System.out.println("Average Marks: " + average);
+    }
+    public static void main(String[] args) 
+   {
+        Student obj1 = new Student();
+        obj1.get("dhanusha", 192111499, 100, 100, 100, 100, 99);
+        obj1.calculate();
+        obj1.display();
+
+        Student obj2 = new Student();
+        obj2.get("dhanusha", 192111499, 90, 85, 95, 88, 92);
+        obj2.calculate();
+        obj2.display();
+    }
+}
