@@ -1,0 +1,20 @@
+import java.util.*;
+class Swap
+{
+public static void main(String args[])
+{
+double a,b;
+Scanner sc=new Scanner(System.in);
+a=sc.nextDouble();
+b=sc.nextDouble();
+a=a+b;
+b=a-b;
+a=a-b;
+System.out.println("After swaping");
+System.out.println(a);
+System.out.println(b);
+}
+}
+
+
+
