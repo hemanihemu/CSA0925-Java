@@ -1,0 +1,19 @@
+import java.util.*;
+class Swap
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("before swapping");
+System.out.println("enter the n umber1");
+float num1=sc.nextFloat();
+System.out.println("enter the number 2");
+float num2=sc.nextFloat();
+num1=num1+num2;
+num2=num1-num2;
+num1=num1-num2;
+System.out.println("after swapping");
+System.out.println("num1 is:"+num1);
+System.out.println("num2 is:"+num2);
+}
+}
