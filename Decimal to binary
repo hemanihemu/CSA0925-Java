@@ -1,0 +1,19 @@
+import java.util.*;
+class Decimal
+{
+  public static void main(String args[])
+   {
+     int i=1,dec=0,rem,no;
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter num");
+     no=sc.nextInt();
+     while(no!=0)
+     {
+      rem=no%10;
+      dec=i*rem;
+      no=no/10;
+      i=i*2;
+      }
+      System.out.println("decimal num="+ Decimal);
+    }
+}
