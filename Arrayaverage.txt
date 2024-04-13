@@ -1,0 +1,21 @@
+import java.util.*;
+
+class Arrayaverage 
+{
+    public static void main(String args[]) 
+      {
+        int i, sum = 0;
+        double average;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array values:");
+        int a[] = new int[10];  
+        for (i = 0; i <=10; i++) 
+        {
+            a[i] = sc.nextInt(); 
+            sum = sum + a[i];
+        }
+        average = (double) sum / 10; 
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+    }
+}
